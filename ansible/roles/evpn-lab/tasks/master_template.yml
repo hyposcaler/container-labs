@@ -2,5 +2,6 @@
 - name: Configure Devices
   cli_config:
     config: "{{ lookup('template', 'templates/eos/master.j2') }}"
+    replace: yes
   tags:
     - master
