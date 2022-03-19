@@ -1,5 +1,5 @@
 ---
-- name: Configure Interfaces
+- name: Configure Devices
   cli_config:
     config: "{{ lookup('template', 'templates/eos/master.j2') }}"
   tags:
