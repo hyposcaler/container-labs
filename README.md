@@ -5,7 +5,7 @@ This is currently a work in progress, and is primarily intended as a learning pr
 ### Clone evpn repo
 
 ```
-git clone https://github.com/hyposcaler/evpn-lab.git
+git clone https://github.com/hyposcaler-container-labs/evpn-lab.git
 ```
 
 ### import ceos image
