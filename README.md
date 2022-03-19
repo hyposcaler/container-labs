@@ -1,4 +1,4 @@
-# evpn-lab
+# hyposcaler-container-labs
 
 This is currently a work in progress, and is primarily intended as a learning project for working thru workflows related to clab and ansible.
 
