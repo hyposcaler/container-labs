@@ -1,4 +1,4 @@
-name: evpn-arista
+name: eos-simple
 topology:
   nodes:
     spine1:

@@ -6,5 +6,5 @@
   tasks:
     - name: configure lab
       import_role:
-        name: evpn-lab
+        name: simple-spine-leaf
 
