@@ -26,10 +26,15 @@ sudo containerlab deploy -t ./eos-evpn.clab.yml
 
 ### Configure the Devices
 
-From the top level of the evpn-lab repo, the default user/pass for ceos is admin/admin
+From the top level of the evpn-lab repo
+
+NOTE:the default user/pass for ceos is admin/admin
 
 ```
 cd ansible
 ansible-playbook -i inventory.yml evpn-lab.yml --ask-pass
 ```
 
+### tear down lab
+
+From the top level of the evpn-lab repo
