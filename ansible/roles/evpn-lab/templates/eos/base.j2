@@ -1,0 +1,23 @@
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$aRV1Gu2uZ23Ckc0G$sL0xRI9ZC00yNhwm2eFe4D1C5I0iyQfEThhe9q6rGBSp7iaGuuXnBu0PGF9kiTO0k4fecKxRXDmzDmtfFCwP8/
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname leaf1
+!
+spanning-tree mode mstp
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+ip routing
+!
