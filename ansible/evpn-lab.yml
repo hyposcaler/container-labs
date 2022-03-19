@@ -1,0 +1,10 @@
+---
+- name: evpnlab
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: configure lab
+      import_role:
+        name: evpn-lab
+

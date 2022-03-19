@@ -1,0 +1,24 @@
+---
+interfaces:
+  Loopback0:
+    address: '192.168.100.4/32'
+  Ethernet1:
+    address: '10.10.10.7/31'
+  Ethernet2:
+    address: '10.10.10.15/31'
+bgp:
+  as_number: 64524
+  router_id: '192.168.100.4'
+  neighbors:
+    10.10.10.6:
+       remote_as: 65500
+       ipv4: true
+       evpn: true
+       send-community: true
+       loopback: '192.168.101.1'
+    10.10.10.14:
+       remote_as: 65500
+       ipv4: true
+       evpn: true
+       send-community: true
+       loopback: '192.168.101.2'

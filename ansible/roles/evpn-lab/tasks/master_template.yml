@@ -1,0 +1,6 @@
+---
+- name: Configure Interfaces
+  cli_config:
+    config: "{{ lookup('template', 'templates/eos/master.j2') }}"
+  tags:
+    - master

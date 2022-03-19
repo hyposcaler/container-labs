@@ -1,0 +1,8 @@
+---
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: eos
+ansible_user: admin
+platform: 'eos'
+ansible_become: yes
+ansible_become_method: enable
+ansible_python_interpreter: /usr/bin/python3
