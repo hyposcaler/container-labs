@@ -2,20 +2,28 @@
 
 This is currently a work in progress, and is primarily intended as a learning project for working thru workflows related to clab and ansible.
 
+## Requirements
+
+- Docker (20.10.13)
+- Containerlab (0.24.1)
+- Ansible (core 2.12.2])
+
+## QuickStart
+
 ### Clone the repo
 
 ```
 git clone https://github.com/hyposcaler-container-labs/evpn-lab.git
 ```
 
-### import ceos image
+### Import ceos image
 
 ```
 docker image import cEOS-lab-4.26.5M.tar ceos:4.26.5M
 ```
 
 
-### Bring up evpn-lab eos-simple-spine-leaf lab
+### Bring up the eos-simple-spine-leaf lab
 
 From the top level of the repo
 
@@ -35,6 +43,6 @@ cd ansible
 ansible-playbook -i inventory.yml simple-spine-leaf.yml --ask-pass
 ```
 
-### tear down lab
+### Tear down lab
 
 From the top level of the repo
