@@ -48,3 +48,9 @@ ansible-playbook -i inventory.yml simple-spine-leaf.yml --ask-pass
 ### Tear down lab
 
 From the top level of the repo
+
+```
+cd clab/eos-simple-spine-leaf
+sudo containerlab deploy -t ./eos-simple-spine-leaf.yml
+```
+
