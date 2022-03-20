@@ -1,6 +1,6 @@
 # Simple Spine Leaf Topology with cEOS devices
 
-## Descriptoin
+## Description
 
 A simple 3 Stage folded Clos with `n=2, m=2, r=2`
 
