@@ -15,7 +15,7 @@ For my personal testing I typically install on a VM running Ubuntu 18.04-LTS or 
 ### Clone the repo
 
 ```
-git clone https://github.com/hyposcaler-container-labs/evpn-lab.git
+git clone https://github.com/hyposcaler/hyposcaler-container-labs.git
 ```
 
 ### Import ceos image
