@@ -2,7 +2,7 @@
 
 This is currently a work in progress, and is primarily intended as a learning project for working thru workflows related to clab and ansible.
 
-### Clone evpn repo
+### Clone the repo
 
 ```
 git clone https://github.com/hyposcaler-container-labs/evpn-lab.git
