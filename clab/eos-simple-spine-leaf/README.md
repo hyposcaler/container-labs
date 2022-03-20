@@ -12,9 +12,29 @@ All devices are running cEOS
 ### graphviz
 
 ```dot
-digraph N {
+graph N {
+    {
+        Node[shape=box]
+        Leaf1
+        Leaf2
+        Leaf3
+        Leaf4
+        Spine1
+        Spine2
+        Host1
+        Host2
+        Host3
+        Host4
+    }
     ordering="out"
-    Spine1 -> {Leaf1,Leaf2,Leaf3,Leaf4}[arrowhead=none]
-    Spine2 -> {Leaf1,Leaf2,Leaf3,Leaf4}[arrowhead=none]
+    rank = same; Leaf1; Leaf2; Leaf3; Leaf4;
+    rank = same; Spine1; Spine2;
+    rank = same; Host1; Host2; Host3; Host4;
+    Spine1 -- {Leaf1,Leaf2,Leaf3,Leaf4}
+    Spine2 -- {Leaf1,Leaf2,Leaf3,Leaf4}
+    Leaf1 -- Host1
+    Leaf2 -- Host2
+    Leaf3 -- Host3
+    Leaf4 -- Host4
 }
 ```
