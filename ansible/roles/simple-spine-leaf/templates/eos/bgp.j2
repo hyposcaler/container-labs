@@ -12,7 +12,10 @@ router bgp {{ bgp.as_number }}
 {% endif %}
    !
    address-family ipv4
-      network {{ interfaces.Loopback0.address }}
+{% for interface in interfaces -%}
+interface {{ interface }}
+      network {{interfaces[interface].address}}
+{% endfor %}
 {% if bgp.neighbors is iterable %}
 {% for neighbor in bgp.neighbors %}      
       neighbor {{ neighbor }} activate
