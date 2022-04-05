@@ -16,7 +16,7 @@ For my personal testing I typically install on a VM running 20.04-LTS, Ubuntu 18
 ### Clone the repo
 
 ```
-git clone https://github.com/hyposcaler/hyposcaler-container-labs.git
+git clone https://github.com/hyposcaler/container-labs.git
 ```
 
 ### Import ceos image
