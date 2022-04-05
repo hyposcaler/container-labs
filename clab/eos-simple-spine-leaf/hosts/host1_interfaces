@@ -5,5 +5,3 @@ auto eth1
 iface eth1 inet static
     address 10.100.101.10
     netmask 255.255.255.0
-    post-up route del default dev eth0
-    post-up route add default via 10.100.101.1 dev eth1
