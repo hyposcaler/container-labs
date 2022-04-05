@@ -8,7 +8,7 @@ All devices are running cEOS
 
 ## Diagrams
 
-![Clos Network with n=2, m=2, r=2](/docs/eos-simple-spine-leaf.jpeg)
+![Clos Network with n=2, m=2, r=2](docs/eos-simple-spine-leaf.jpeg)
 
 ### Graphviz
 
