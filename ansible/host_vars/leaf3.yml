@@ -7,7 +7,7 @@ interfaces:
   Ethernet2:
     address: '10.10.10.13/31'
   Ethernet3:
-    address: '10.100.102.1/24'
+    address: '10.100.103.1/24'
 bgp:
   as_number: 64523
   router_id: '192.168.100.3'
