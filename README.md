@@ -39,7 +39,7 @@ sudo containerlab deploy -t ./eos-simple-spine-leaf.yml
 
 From the top level of the repo
 
-NOTE:the default user/pass for ceos is admin/admin
+NOTE: the default user/pass for ceos lab container is admin/admin
 
 ```
 cd ansible
