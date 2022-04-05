@@ -9,7 +9,7 @@ This is currently a work in progress, and is primarily intended as a learning pr
 - Containerlab (0.24.1) [Installation instructions](https://containerlab.dev/install/)
 - Ansible (core 2.12.2]) [Installation instructions](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
-For my personal testing I typically install on a VM running Ubuntu 18.04-LTS or 20.04-LTS
+For my personal testing I typically install on a VM running 20.04-LTS, Ubuntu 18.04-LTS may also work.
 
 ## QuickStart
 
