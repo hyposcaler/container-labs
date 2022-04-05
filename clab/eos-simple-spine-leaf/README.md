@@ -67,3 +67,11 @@ The Ansible directory of this repo has a simple-spine-leaf role for configuring 
     - spine2 `10.10.10.10/31` <-> leaf2 `10.10.10.11/31`
     - spine2 `10.10.10.12/31` <-> leaf3 `10.10.10.13/31`
     - spine2 `10.10.10.14/31` <-> leaf4 `10.10.10.15/31`
+
+## BGP
+
+- BGP AS used for leafs take the form of `6452${leafID}`
+  - as an example leaf1 is in the as `64521`
+- BGP AS used for all spines is `65500`
+    - note there is no iBGP between spines
+- All loopbacks and ptp subnets are advertised via network statements
