@@ -1,6 +1,6 @@
 # hyposcaler-container-labs
 
-This is currently a work in progress, and is primarily intended as a learning project for working thru workflows related to clab and ansible.
+This is currently a work in progress, and is primarily intended as a learning project for working thru workflows related to [Container labs](https://containerlab.dev/) and Ansible.
 
 ## Requirements
 
