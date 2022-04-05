@@ -43,6 +43,8 @@ graph N {
 
 ## Addressing 
 
+The Ansible directory of this repo has a simple-spine-leaf role for configuring this lab.  Using this role will result in the following addressing.
+
 - All hosts addresses are of the form `10.100.10${hostID}.10` 
     - as an example host1 has the ip address `10.100.101.10`
 - All leaf loopback addresses are of the form `192.168.101.${leafID}` 
