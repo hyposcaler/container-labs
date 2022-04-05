@@ -21,6 +21,8 @@ git clone https://github.com/hyposcaler/container-labs.git
 
 ### Import ceos image
 
+Note you will need to obtain the ceos-lab image from the [Support Section](https://www.arista.com/en/support/software-download) of the Arista website.  You will need an Account with Arista to do so.
+
 ```
 docker image import cEOS-lab-4.26.5M.tar ceos:4.26.5M
 ```
