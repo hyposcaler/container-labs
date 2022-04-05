@@ -1,5 +1,5 @@
 ---
-- name: evpnlab
+- name: simple-spine-leaf
   hosts: all
   gather_facts: false
 
