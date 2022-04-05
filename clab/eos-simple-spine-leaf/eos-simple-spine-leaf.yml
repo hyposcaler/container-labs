@@ -31,8 +31,8 @@ topology:
             binds:
                     - hosts/host1_interfaces:/etc/network/interfaces
             exec:
-              - route add default via 10.100.101.1 dev eth1
-              - route del default dev eth0
+              - ip route add default via 10.100.101.1 dev eth1
+              - ip route del default dev eth0
             mgmt_ipv4: 172.20.20.21
     host2:
             kind: linux
@@ -40,8 +40,8 @@ topology:
             binds:
                     - hosts/host2_interfaces:/etc/network/interfaces
             exec:
-              - route add default via 10.100.102.1 dev eth1
-              - route del default dev eth0
+              - ip route add default via 10.100.102.1 dev eth1
+              - ip route del default dev eth0
             mgmt_ipv4: 172.20.20.22
     host3:
             kind: linux
@@ -49,8 +49,8 @@ topology:
             binds:
                     - hosts/host3_interfaces:/etc/network/interfaces
             exec:
-              - route add default via 10.100.103.1 dev eth1
-              - route del default dev eth0
+              - ip route add default via 10.100.103.1 dev eth1
+              - ip route del default dev eth0
             mgmt_ipv4: 172.20.20.23
     host4:
             kind: linux
@@ -58,8 +58,8 @@ topology:
             binds:
                     - hosts/host4_interfaces:/etc/network/interfaces
             exec:
-              - route add default via 10.100.104.1 dev eth1
-              - route del default dev eth0
+              - ip route add default via 10.100.104.1 dev eth1
+              - ip route del default dev eth0
             mgmt_ipv4: 172.20.20.24
   links:
           - endpoints: ["leaf1:eth1", "spine1:eth1"]
