@@ -1,3 +1,5 @@
+---
+role: spine
 interfaces:
   Loopback0:
     address: '192.168.101.1/32'
