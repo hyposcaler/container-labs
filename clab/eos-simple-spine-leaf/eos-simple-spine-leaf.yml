@@ -3,27 +3,27 @@ topology:
   nodes:
     spine1:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M 
             mgmt_ipv4: 172.20.20.101
     spine2:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.102
     leaf1:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.11
     leaf2:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.12
     leaf3:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.13
     leaf4:
             kind: ceos
-            image: ceos:4.26.5M
+            image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.14
     host1:
             kind: linux
@@ -50,7 +50,7 @@ topology:
                     - hosts/host3_interfaces:/etc/network/interfaces
             exec:
               - ip route del default dev eth0
-              - ip route add default via 10.100.103.1 dev eth1
+              - ip route add default via 10.100.101.1 dev eth1
             mgmt_ipv4: 172.20.20.23
     host4:
             kind: linux
@@ -74,3 +74,5 @@ topology:
           - endpoints: ["leaf2:eth1", "host2:eth1"]
           - endpoints: ["leaf3:eth1", "host3:eth1"]
           - endpoints: ["leaf4:eth1", "host4:eth1"]
+          - endpoints: ["leaf1:eth10", "leaf2:eth10"]
+          - endpoints: ["leaf3:eth10", "leaf4:eth10"]
