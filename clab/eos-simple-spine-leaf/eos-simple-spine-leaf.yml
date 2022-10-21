@@ -41,7 +41,7 @@ topology:
                     - hosts/host2_interfaces:/etc/network/interfaces
             exec:
               - ip route del default dev eth0
-              - ip route add default via 10.100.102.1 dev eth1
+              - ip route add default via 10.100.101.1 dev eth1
             mgmt_ipv4: 172.20.20.22
     host3:
             kind: linux
