@@ -3,11 +3,11 @@ role: leaf
 interfaces:
   Loopback0:
     address: '192.168.100.1/32'
-  Ethernet1:
+  Ethernet11:
     address: '10.10.10.1/31'
-  Ethernet2:
+  Ethernet12:
     address: '10.10.10.9/31'
-  Ethernet3:
+  Ethernet1:
     address: '10.100.101.1/24'
 bgp:
   as_number: 64521

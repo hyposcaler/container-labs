@@ -2,11 +2,11 @@
 interfaces:
   Loopback0:
     address: '192.168.100.3/32'
-  Ethernet1:
+  Ethernet11:
     address: '10.10.10.5/31'
-  Ethernet2:
+  Ethernet12:
     address: '10.10.10.13/31'
-  Ethernet3:
+  Ethernet1:
     address: '10.100.103.1/24'
 bgp:
   as_number: 64523
