@@ -14,13 +14,13 @@ bgp:
   router_id: '192.168.100.1'
   neighbors:
     10.10.10.0:
-       remote_as: 65500
+       remote_as: 65501
        ipv4: true
        evpn: true
        send-community: true
        loopback: '192.168.101.1'
     10.10.10.8:
-       remote_as: 65500
+       remote_as: 65502
        ipv4: true
        evpn: true
        send-community: true
