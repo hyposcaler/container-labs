@@ -29,3 +29,12 @@ router bgp {{ bgp.as_number }}
       neighbor {{ neighbor }} next-hop-unchanged
 {% endfor %}
 {% endif %}
+{% if vxlan.vlans is iterable %}
+{% for vlan in vxlan.vlans %}      
+   vlan {{ vlan }}
+   rd {{ vxlan.vlans[vlan].rd }}
+   route-target import evpn domain all {{ vxlan.vlans[vlan].import_rt }}
+   route-target export evpn domain all {{ vxlan.vlans[vlan].export_rt }}
+   redistribute learned
+{% endfor %}
+{% endif %}
