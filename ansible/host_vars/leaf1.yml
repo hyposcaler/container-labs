@@ -27,3 +27,4 @@ bgp:
        loopback: '192.168.101.2'
 vxlan:
   vlans:
+  vrfs:
