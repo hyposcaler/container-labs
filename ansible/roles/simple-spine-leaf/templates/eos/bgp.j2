@@ -8,7 +8,7 @@ router bgp {{ bgp.as_number }}
 {% if bgp.neighbors is iterable %}
 {% for neighbor in bgp.neighbors %}
    neighbor {{ neighbor }} remote-as {{ bgp.neighbors[neighbor].remote_as }}
-   neighbor {{ neighbor }} send-community extended {{ bgp.neighbors[neighbor].remote_as }}
+   neighbor {{ neighbor }} send-community extended
 {% endfor %}
 {% endif %}
    !
