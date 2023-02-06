@@ -1,4 +1,7 @@
 {% if role == 'leaf' %}
+!
+ip virtual-router mac-address 00:aa:aa:aa:aa:aa
+!
 interface Vxlan1
    vxlan source-interface Loopback0
    vxlan udp-port 4789
