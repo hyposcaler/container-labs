@@ -8,6 +8,7 @@ router bgp {{ bgp.as_number }}
 {% if bgp.neighbors is iterable %}
 {% for neighbor in bgp.neighbors %}
    neighbor {{ neighbor }} remote-as {{ bgp.neighbors[neighbor].remote_as }}
+   neighbor {{ neighbor }} send-community extended {{ bgp.neighbors[neighbor].remote_as }}
 {% endfor %}
 {% endif %}
    !
@@ -18,5 +19,13 @@ router bgp {{ bgp.as_number }}
 {% if bgp.neighbors is iterable %}
 {% for neighbor in bgp.neighbors %}      
       neighbor {{ neighbor }} activate
+{% endfor %}
+{% endif %}
+   !
+   address-family evpn
+{% if bgp.neighbors is iterable %}
+{% for neighbor in bgp.neighbors %}      
+      neighbor {{ neighbor }} activate
+      neighbor {{ neighbor }} next-hop-unchanged
 {% endfor %}
 {% endif %}
