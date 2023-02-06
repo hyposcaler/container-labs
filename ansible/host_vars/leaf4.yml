@@ -24,7 +24,7 @@ bgp:
        evpn: true
        send-community: true
        loopback: '192.168.101.2'
-vxlan
+vxlan:
   vlans:
     100:
       vni: 10100
