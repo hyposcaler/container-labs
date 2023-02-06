@@ -6,8 +6,6 @@ interfaces:
     address: '10.10.20.3/31'
   Ethernet12:
     address: '10.10.20.11/31'
-  Ethernet1:
-    address: '10.100.106.1/24'
 bgp:
   as_number: 64526
   router_id: '192.168.100.6'
