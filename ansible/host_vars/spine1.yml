@@ -11,6 +11,10 @@ interfaces:
     address: '10.10.10.4/31'
   Ethernet4:
     address: '10.10.10.6/31'
+  Ethernet5:
+    address: '10.10.20.0/31'
+  Ethernet6:
+    address: '10.10.20.2/31'
 bgp:
   as_number: 65501
   router_id: '192.168.101.1'
@@ -39,4 +43,16 @@ bgp:
        evpn: true
        send-community: true
        loopback: '192.168.100.4'
+    10.10.20.1:
+       remote_as: 64525
+       ipv4: true
+       evpn: true
+       send-community: true
+       loopback: '192.168.100.5'
+    10.10.20.3:
+       remote_as: 64526
+       ipv4: true
+       evpn: true
+       send-community: true
+       loopback: '192.168.100.6'
 

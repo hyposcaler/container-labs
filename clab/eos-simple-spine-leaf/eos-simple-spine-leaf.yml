@@ -25,6 +25,14 @@ topology:
             kind: ceos
             image: ceos:4.27.6M
             mgmt_ipv4: 172.20.20.14
+    leaf5:
+            kind: ceos
+            image: ceos:4.27.6M
+            mgmt_ipv4: 172.20.20.15
+    leaf6:
+            kind: ceos
+            image: ceos:4.27.6M
+            mgmt_ipv4: 172.20.20.16
     host1:
             kind: linux
             image: networkop/host:ifreload
@@ -79,6 +87,10 @@ topology:
           - endpoints: ["leaf3:eth12", "spine2:eth3"]
           - endpoints: ["leaf4:eth11", "spine1:eth4"]
           - endpoints: ["leaf4:eth12", "spine2:eth4"]
+          - endpoints: ["leaf5:eth11", "spine1:eth5"]
+          - endpoints: ["leaf5:eth12", "spine2:eth5"]
+          - endpoints: ["leaf6:eth11", "spine1:eth6"]
+          - endpoints: ["leaf6:eth12", "spine2:eth6"]
           - endpoints: ["leaf1:eth1", "host1:eth1"]
           - endpoints: ["leaf2:eth1", "host2:eth1"]
           - endpoints: ["leaf2:eth2", "host5:eth1"]
