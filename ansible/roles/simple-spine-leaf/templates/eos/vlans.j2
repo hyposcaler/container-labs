@@ -1,5 +1,5 @@
 {% if vxlan.vlans is iterable %}
-{% for vlan in vxlans.vlans %}      
+{% for vlan in vxlan.vlans %}      
       vlan {{ vlan }}
 {% endfor %}
 {% endif %}
