@@ -1,0 +1,8 @@
+{% if vxlan.vrfs is iterable %}
+{% for vrf in vxlan.vrfs %}      
+!
+vrf instance {{ vrf }}
+!
+ip routing vrf {{ vrf }}
+{% endfor %}
+{% endif %}
