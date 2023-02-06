@@ -2,4 +2,9 @@
 interface Vxlan1
    vxlan source-interface Loopback0
    vxlan udp-port 4789
+{% if vxlan.vlans is iterable %}
+{% for vlan in vxlan.vlans %}      
+   vxlan vlan {{ vlan }} vni {{ vlan.vlans[vlan].vni }}
+{% endfor %}
+{% endif %}
 {% endif %}
