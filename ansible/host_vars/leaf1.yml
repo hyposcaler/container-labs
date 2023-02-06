@@ -25,12 +25,5 @@ bgp:
        evpn: true
        send-community: true
        loopback: '192.168.101.2'
-vlans:
-  100:
-    vni: 10100
-    name: 'VLAN100-VNI10100'
-    interfaces:
-      - 'Ethernet3'
-    rd: '192.168.100.1:1'
-    export_rt: '100:100'
-    import_rt: '100:100'
+vxlan:
+  vlans:
