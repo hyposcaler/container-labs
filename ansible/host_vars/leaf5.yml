@@ -25,17 +25,4 @@ bgp:
        loopback: '192.168.101.2'
 vxlan:
   vlans:
-    100:
-      vni: 10100
-      interfaces:
-        - 'Ethernet1'
-      rd: '192.168.100.5:10100'
-      export_rt: '100:100'
-      import_rt: '100:100'
   vrfs:
-    vrf10000:
-      vni: 10000
-      vlan: 100
-      rd: '192.168.100.5:10000'
-      export_rt: '10.0.0.0:10000'
-      import_rt: '10.0.0.0:10000'
